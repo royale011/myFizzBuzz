@@ -10,6 +10,9 @@ public class FizzBuzzMaker {
     if (FizzBuzzChecker.isFizz(given)) {
       return "Fizz";
     }
+    if (FizzBuzzChecker.isBuzz(given)) {
+      return "Buzz";
+    }
     return String.valueOf(given);
   }
 }
