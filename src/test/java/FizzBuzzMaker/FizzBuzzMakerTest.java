@@ -18,4 +18,14 @@ public class FizzBuzzMakerTest {
     // then
     assertThat(result, is("1"));
   }
+
+  @Test
+  public void should_makeString_return_string_Fizz_given_3() {
+    // given
+    int given = 3;
+    // when
+    String result = FizzBuzzMaker.makeString(given);
+    // then
+    assertThat(result, is("Fizz"));
+  }
 }
