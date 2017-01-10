@@ -9,5 +9,6 @@ public class FizzBuzzChecker {
   }
 
   public static boolean isBuzz(int given) {
+    return false;
   }
 }
