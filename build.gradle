@@ -14,7 +14,9 @@ apply plugin: 'idea'
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
+    mavenLocal()
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -22,6 +24,7 @@ dependencies {
     compile 'com.google.guava:guava:20.0'
 
     // Use JUnit test framework
+    testCompile "org.mockito:mockito-core:1.+"
     testCompile 'junit:junit:4.12'
 }
 
