@@ -7,12 +7,16 @@ import FizzBuzzChecker.FizzBuzzChecker;
  */
 public class FizzBuzzMaker {
   public static String makeString(int given) {
+    StringBuffer stringBuffer = new StringBuffer();
     if (FizzBuzzChecker.isFizz(given)) {
-      return "Fizz";
+      stringBuffer.append("Fizz");
     }
     if (FizzBuzzChecker.isBuzz(given)) {
-      return "Buzz";
+      stringBuffer.append("Buzz");
     }
-    return String.valueOf(given);
+    if (stringBuffer.length() == 0) {
+      stringBuffer.append(String.valueOf(given));
+    }
+    return stringBuffer.toString();
   }
 }
