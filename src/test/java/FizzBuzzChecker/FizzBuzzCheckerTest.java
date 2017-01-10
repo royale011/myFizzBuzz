@@ -29,12 +29,22 @@ public class FizzBuzzCheckerTest {
   }
 
   @Test
-  public void should_isBuzz_return_false_given_5() {
+  public void should_isBuzz_return_false_given_1() {
     // given
     int given = 1;
     // when
     boolean buzzReturn = FizzBuzzChecker.isBuzz(given);
     // then
     assertThat(buzzReturn, is(false));
+  }
+
+  @Test
+  public void should_isBuzz_return_true_given_5() {
+    // given
+    int given = 5;
+    // when
+    boolean buzzReturn = FizzBuzzChecker.isBuzz(given);
+    // then
+    assertThat(buzzReturn, is(true));
   }
 }
