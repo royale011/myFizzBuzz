@@ -10,11 +10,21 @@ import static org.junit.Assert.assertThat;
 public class FizzBuzzCheckerTest {
   @Test
   public void should_isFizz_return_false_given_1() {
-    //given
+    // given
     int given = 1;
-    //when
-    boolean isFizzReturn = FizzBuzzChecker.isFizz(given);
-    //then
-    assertThat(isFizzReturn, is(false));
+    // when
+    boolean fizzReturn = FizzBuzzChecker.isFizz(given);
+    // then
+    assertThat(fizzReturn, is(false));
+  }
+
+  @Test
+  public void should_isFizz_return_true_given_3() {
+    // given
+    int given = 3;
+    // when
+    boolean fizzReturn = FizzBuzzChecker.isFizz(given);
+    // then
+    assertThat(fizzReturn, is(true));
   }
 }
