@@ -5,6 +5,6 @@ package FizzBuzzChecker;
  */
 public class FizzBuzzChecker {
   public static boolean isFizz(int given) {
-    return false;
+    return given % 3 == 0;
   }
 }
