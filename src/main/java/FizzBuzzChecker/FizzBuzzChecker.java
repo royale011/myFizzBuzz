@@ -7,4 +7,7 @@ public class FizzBuzzChecker {
   public static boolean isFizz(int given) {
     return given % 3 == 0;
   }
+
+  public static boolean isBuzz(int given) {
+  }
 }
