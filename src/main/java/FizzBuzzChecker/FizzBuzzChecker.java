@@ -9,6 +9,6 @@ public class FizzBuzzChecker {
   }
 
   public static boolean isBuzz(int given) {
-    return false;
+    return given % 5 == 0;
   }
 }
