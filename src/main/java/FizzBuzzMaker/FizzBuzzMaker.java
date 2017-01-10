@@ -5,6 +5,6 @@ package FizzBuzzMaker;
  */
 public class FizzBuzzMaker {
   public static String makeString(int given) {
-    return "";
+    return String.valueOf(given);
   }
 }
