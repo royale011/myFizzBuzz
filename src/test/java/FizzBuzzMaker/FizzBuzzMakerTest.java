@@ -20,7 +20,7 @@ public class FizzBuzzMakerTest {
   }
 
   @Test
-  public void should_makeString_return_string_Fizz_given_3() {
+  public void should_makeString_return_Fizz_given_3() {
     // given
     int given = 3;
     // when
@@ -30,12 +30,22 @@ public class FizzBuzzMakerTest {
   }
 
   @Test
-  public void should_makeString_return_string_Buzz_given_5() {
+  public void should_makeString_return_Buzz_given_5() {
     // given
     int given = 5;
     // when
     String result = FizzBuzzMaker.makeString(given);
     // then
     assertThat(result, is("Buzz"));
+  }
+
+  @Test
+  public void should_makeString_return_FizzBuzz_given_15() {
+    // given
+    int given = 15;
+    // when
+    String result = FizzBuzzMaker.makeString(given);
+    // then
+    assertThat(result, is("FizzBuzz"));
   }
 }
