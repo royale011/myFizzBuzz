@@ -28,4 +28,14 @@ public class FizzBuzzMakerTest {
     // then
     assertThat(result, is("Fizz"));
   }
+
+  @Test
+  public void should_makeString_return_string_Buzz_given_5() {
+    // given
+    int given = 5;
+    // when
+    String result = FizzBuzzMaker.makeString(given);
+    // then
+    assertThat(result, is("Buzz"));
+  }
 }
